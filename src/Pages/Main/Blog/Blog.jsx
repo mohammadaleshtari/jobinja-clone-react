@@ -1,23 +1,26 @@
+
 import { useContext } from "react";
-import { MainContext } from "../Main";
+import { Allcontext } from "../../../../App/App";
+import { NavLink } from "react-router-dom";
+
 
 const Blog = () => {
-  let { data, loading, error } = useContext(MainContext);
+  let{Maindata,loding,error} = useContext(Allcontext)
   return (
     <section className="w-[85%] h-[100vh]  m-auto mt-[50px]">
       <div className="flex justify-around">
         <p className="w-[50%]">
           <a href="#">مشاهده همه</a>
         </p>
-        <p className="w-[50%] text-right">از وبلاگ جابینجا</p>
+        <p className="w-[70%] text-right">از وبلاگ جابینجا</p>
       </div>
       <hr className="mt-[10px] mb-[20px]" />
 
       <div className="w-[100%]  flex text-right justify-center">
-        {data?.card2?.map((item) => {
+        {Maindata?.card2?.map((item) => {
           return (
             <div
-              className="w-[32%] mt-[10px] p-[20px] border-[1px] border-[solid] border-[#E5E7EB] rounded-[5px]"
+              className="w-[32%] mt-[10px] p-[20px] border-[1px] border-[solid] border-[#E5E7EB] rounded-[5px] m-[15px]"
               key={item.id}
             >
               <div>
@@ -30,7 +33,7 @@ const Blog = () => {
                 <p className="text-[14px] text-[#A5A5A5]  mt-[10px]">
                 {item.text2}
                 </p>
-                <a href={item.link}>{item.text3}</a>
+                <a href={item.link} className="text-[#55c0ee] hover:text-[#459bc0]">{item.text3}</a>
               </div>
             </div>
           );

@@ -1,0 +1,64 @@
+/* EmployersSection.css */
+.employers-section {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 2rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+h2 {
+  color: #4caf50;
+  font-size: 1.5rem;
+}
+
+.employers-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employer-item {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.employer-form {
+  margin-top: 20px;
+}
+
+.employer-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

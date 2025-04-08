@@ -3,65 +3,43 @@ import { MdOutlineNotificationsNone } from "react-icons/md";
 import { FcDataSheet } from "react-icons/fc";
 import { TbLogin } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useContext } from "react";
+import { Allcontext } from "../../../../App/App";
 
 const HeaderP1 = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const Myfetch = async () => {
-    setLoading(true);
-    try {
-      const res = await axios.get("http://localhost:3007/header");
-      console.log(res);
-      setData(res.data);
-      setLoading(false);
-      setError(null);
-    } catch (error) {
-      setData(null);
-      setLoading(false);
-      setError(error.message);
-    } finally {
-      setLoading(false); // پس از پایان درخواست (موفق یا ناموفق)، وضعیت بارگذاری را تمام شده نشان دهید
-    }
-  };
-
-  useEffect(() => {
-    Myfetch();
-  }, []);
+  let { Headerdata, loading, error } = useContext(Allcontext);
   return (
-    <section className="h-[23%]  flex justify-end bg-[#444444]">
+    <section className="  flex justify-end bg-[#444444]  w-[100%] h-[12vh] font-custom">
       <div className="flex w-[37%] justify-center">
         <div></div>
-        <h1 className="text-[23px]  font-bold ] p-[20px] text-[#A5A5A5]  border-r border-l border-[#535353] ml-[50px] shadow-sm shadow-[#2b2b2b] h-[69px]">
-          jobinja
+        <h1 className="text-[23px]  font-bold ] p-[20px] text-[#e7e6e6]  border-r border-l border-[#535353] ml-[50px] shadow-sm shadow-[#2b2b2b] h-[69px] hover:text-[#FFFFFF]">
+          <NavLink>jobinja</NavLink>
         </h1>
         <div className="flex items-center mr-[100px] leading-3">
-          <h1 className="text-[#DEDEDE] text-[12px] flex justify-center ml-[15px] font-bold">
-            ورود کارجو
-            <TbLogin className="ml-[4px] text-[15px]" />
+          <h1 className="text-[#DEDEDE] text-[12px] flex justify-center ml-[15px] font-bold hover:text-[#FFFFFF]">
+            <NavLink>ورود کارجو</NavLink>
+            <TbLogin className="ml-[4px] text-[15px] hover:text-[#FFFFFF]" />
           </h1>
-          <h1 className="text-[#DEDEDE] ml-[20px] text-[12px] flex font-bold">
-            ثبت نام کارجو
-            <MdPerson className="ml-[4px] text-[14px]" />
+          <h1 className="text-[#DEDEDE] ml-[20px] text-[12px] flex font-bold hover:text-[#FFFFFF]">
+            <NavLink>ثبت نام کارجو</NavLink>
+            <MdPerson className="ml-[4px] text-[14px] hover:text-[#FFFFFF]" />
           </h1>
           <MdOutlineNotificationsNone className="text-[#777777] text-[25px] ml-[15px]" />
         </div>
       </div>
       <ul className="w-[60%] flex p-[25px] mr-[10px] items-center text-[12px] justify-center font-bold">
-        {data?.menu?.map((item) => {
+        {Headerdata?.menu?.map((item) => {
           return (
             <li
               className=" hover:bg-[#505050] border border-[#575757]  shadow-sm shadow-[#1b1b1b]"
               key={item.id}
             >
-              <NavLink
-                to={item.link}
-                className=" text-[#F6F6F6] flex p-[25px] "
-              >
-                {item.label}
-                <FcDataSheet className="text-[17px] ml-[7px]" />
+              <NavLink to={item.link} className=" flex p-[20px]">
+                <p className="text-[13px] text-[#F6F6F6]">{item.label}</p>
+                <img
+                  src={item.icon}
+                  className="h-[16px] w-[17px]  ml-[4px] mt-[4px]"
+                ></img>
               </NavLink>
             </li>
           );

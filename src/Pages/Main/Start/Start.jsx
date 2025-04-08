@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import { MainContext } from "../Main";
-
+import { Allcontext } from "../../../../App/App";
 
 const Start = () => {
-  let{data,loading,error}=useContext(MainContext)
+  let { Maindata, loading, error } = useContext(Allcontext);
   return (
     <>
       <section className="bg-[#F9F9F9] w-[80%] h-[60vh] m-auto mt[20px] rounded-[5px]">
@@ -12,7 +11,7 @@ const Start = () => {
         </h2>
         <hr className="w-[80%] m-auto" />
         <div className="flex justify-center">
-          {data?.start?.map((item) => {
+          {Maindata?.start?.map((item) => {
             return (
               <div className="w-[22%]  m-[8px]" key={item.id}>
                 <div className="flex justify-end mb-[25px]">

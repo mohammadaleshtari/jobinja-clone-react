@@ -1,31 +1,35 @@
 {
   "header": {
     "menu": [
-      { "id": 1, "label": "خانه", "link": "/", "icon": "GoHome" },
+      {
+        "id": 1,
+        "label": "بخش کارفرمایان",
+        "link": "/EmployersSection",
+        "icon": "/svg/icons8-office-64.png"
+      },
       {
         "id": 2,
-        "label": "جستجوی مشاغل",
-        "link": "/JabinjaJobs",
-        "icon": "FcSearch"
+        "label": "پنجاه شرکت برتر",
+        "link": "/TopCompanies",
+        "icon": "/svg/icons8-gemstone-48.png"
       },
       {
         "id": 3,
         "label": "رزومه ساز",
         "link": "/ResumeMaker",
-        "icon": "IoSparklesOutline"
+        "icon": "/svg/icons8-sparkles-48.png"
       },
       {
         "id": 4,
-        "label": "پنجاه شرکت برتر",
-        "link": "/TopCompanies",
-        "icon": "LiaGemSolid"
+        "label": "جستجوی مشاغل",
+        "link": "/JabinjaJobs",
+        "icon": "/svg/icons8-magnifier-48 (1).png"
       },
-      {
-        "id": 5,
-        "label": "بخش کارفرمایان",
-        "link": "/EmployersSection",
-        "icon": "FcDataSheet"
-      }
+      { "id": 5, "label": "خانه", "link": "/", "icon": "/svg/home.svg" }
+
+
+
+
     ],
     "logo": {
       "name": "logo"
@@ -95,7 +99,7 @@
       },
       {
         "id": 8,
-        "image": "",
+        "image": "./src/assets/image/111.jpg",
         "text": "10 فرصت شغلی",
         "label": "توسعه انفورماتیک"
       },

@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import { MainContext } from "../Main";
+import { Allcontext } from "../../../../App/App";
+import { NavLink } from "react-router-dom";
 
 const JobList = () => {
-  let { data, loading, error } = useContext(MainContext);
+  let { Maindata, loading, error } = useContext(Allcontext);
   return (
     <>
       <section className="w-[100%] h-[500px] bg-[#F9F9F9] mt-[25px] pl-[150px] pr-[150px]">
@@ -12,44 +13,44 @@ const JobList = () => {
         <hr />
 
         <div className="flex justify-around text-end mt-[25px]">
-          {data?.list1?.map((item) => {
+          {Maindata?.list1?.map((item) => {
             return (
               <div key={item.id}>
                 <ul className="leading-[30px]">
                   <li className="p-[8px]">
-                    <a href="#" className="font-bold text-[#555555]">
+                    <NavLink href="#" className="font-bold text-[#555555]">
                       {item.label1}
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="p-[8px]">
-                    <a href="#" className="text-[#8f8f8f] text-[15px]">
+                    <NavLink href="#" className="text-[#8f8f8f] text-[15px]  hover:text-[#3f3f3f]">
                       {item.label2}
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="p-[8px]">
-                    <a href="#" className="text-[#8f8f8f] text-[15px]">
+                    <NavLink href="#" className="text-[#8f8f8f] text-[15px]  hover:text-[#3f3f3f]">
                       {item.label3}
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="p-[8px]">
-                    <a href="#" className="text-[#8f8f8f] text-[15px]">
+                    <NavLink href="#" className="text-[#8f8f8f] text-[15px]  hover:text-[#3f3f3f]">
                       {item.label4}
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="p-[8px]">
-                    <a href="#" className="text-[#8f8f8f] text-[15px]">
+                    <NavLink href="#" className="text-[#8f8f8f] text-[15px]  hover:text-[#3f3f3f]">
                       {item.label5}
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="p-[8px]">
-                    <a href="#" className="text-[#8f8f8f] text-[15px]">
+                    <NavLink href="#" className="text-[#8f8f8f] text-[15px]  hover:text-[#3f3f3f]">
                       {item.label6}
-                    </a>
+                    </NavLink>
                   </li>
                   <li className="p-[8px]">
-                    <a href="#" className="text-[#8f8f8f] text-[15px]">
+                    <NavLink href="#" className="text-[#8f8f8f] text-[15px]  hover:text-[#3f3f3f]">
                       {item.label7}
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>

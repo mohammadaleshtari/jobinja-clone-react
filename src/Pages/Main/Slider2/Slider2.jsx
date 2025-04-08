@@ -10,9 +10,9 @@ import "./Slider2.css";
 // import required modules
 import { Pagination } from "swiper/modules";
 import { useContext } from "react";
-import { MainContext } from "../Main";
+import { Allcontext } from "../../../../App/App";
 const Slider2 = () => {
-  let { data, loading, error } = useContext(MainContext);
+  let { Maindata, loading, error } = useContext(Allcontext);
   return (
     <>
       <div className="flex mt-[50px]">
@@ -35,10 +35,10 @@ const Slider2 = () => {
         className="mySwiper"
         style={{ width: "80%", height: "90vh" }}
       >
-        {data?.slider2?.map((item) => {
+        {Maindata?.slider2?.map((item) => {
           return (
             <SwiperSlide key={item.id}>
-              <div className="border-[1px] border-[#EEEEEE] border-[solid] mb-[20px] p-[15px]  text-right">
+              <div className="border-[1px] border-[#EEEEEE] border-[solid] mb-[20px] p-[15px]  text-center">
                 <div className="mt-[25px]">
                   <h2 className="text-[14px] font-bold text-[#555555]">
                     {item.text1}
