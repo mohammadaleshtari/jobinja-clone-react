@@ -26,7 +26,7 @@ const App = () => {
   const Myfetch = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("/data/header.json");
+      const res = await axios.get("../data/header.json");
       console.log(res);
       setHeaderdata(res.data);
       setLoading(false);
