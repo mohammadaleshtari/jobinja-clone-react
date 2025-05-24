@@ -4,31 +4,31 @@
       "id": 1,
       "label": "بخش کارفرمایان",
       "link": "/EmployersSection",
-      "icon": "/svg/icons8-office-64.png"
+      "icon": "assets/svg/icons8-office-64.png"
     },
     {
       "id": 2,
       "label": "پنجاه شرکت برتر",
       "link": "/TopCompanies",
-      "icon": "/svg/icons8-gemstone-48.png"
+      "icon": "assets/svg/icons8-gemstone-48.png"
     },
     {
       "id": 3,
       "label": "رزومه ساز",
       "link": "/ResumeMaker",
-      "icon": "/svg/icons8-sparkles-48.png"
+      "icon": "assets/svg/icons8-sparkles-48.png"
     },
     {
       "id": 4,
       "label": "جستجوی مشاغل",
       "link": "/JabinjaJobs",
-      "icon": "/svg/icons8-magnifier-48 (1).png"
+      "icon": "assets/svg/icons8-magnifier-48 (1).png"
     },
     {
       "id": 5,
       "label": "خانه",
       "link": "/",
-      "icon": "/svg/home.svg"
+      "icon": "assets/svg/home.svg"
     }
   ],
   "logo": {

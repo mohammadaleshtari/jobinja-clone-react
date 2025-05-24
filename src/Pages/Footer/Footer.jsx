@@ -15,10 +15,10 @@ const Footer = () => {
             </h2>
             <hr className="mb-[20px] mt-[10px] border-[#686868]" />
             <div className="flex text-[25px] justify-center">
-              <NavLink  to={"https://twitter.com"} ><img src="/svg/twitter.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
-              <NavLink to={"https://t.me"} ><img src="/svg/telegram.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
-              <NavLink to={"https://www.instagram.com"}><img src="/svg/instagram.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
-              <NavLink  to={"https://www.linkedin.com"}><img src="/svg/linkdin.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
+              <NavLink  to={"https://twitter.com"} ><img src="assets/svg/twitter.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
+              <NavLink to={"https://t.me"} ><img src="assets/svg/telegram.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
+              <NavLink to={"https://www.instagram.com"}><img src="assets/svg/instagram.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
+              <NavLink  to={"https://www.linkedin.com"}><img src="assets/svg/linkdin.svg" className="h-[50px] w-[50px] m-[8px]"/></NavLink>
             </div>
             <h2 className="text-[#999999] font-bold text-right text-[18px] mt-[10px]">
               jobinja
