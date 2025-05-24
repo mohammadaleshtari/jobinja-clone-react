@@ -26,7 +26,7 @@ const App = () => {
   const Myfetch = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:3007/header");
+      const res = await axios.get("/data/header.json");
       console.log(res);
       setHeaderdata(res.data);
       setLoading(false);
@@ -42,7 +42,7 @@ const App = () => {
   const MyfetchMain = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:3007/main");
+      const res = await axios.get("/data/main.json");
       console.log(res);
       setMaindata(res.data);
       setLoading(false);

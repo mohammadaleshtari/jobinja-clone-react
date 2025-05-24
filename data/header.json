@@ -1,0 +1,91 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "label": "بخش کارفرمایان",
+      "link": "/EmployersSection",
+      "icon": "/svg/icons8-office-64.png"
+    },
+    {
+      "id": 2,
+      "label": "پنجاه شرکت برتر",
+      "link": "/TopCompanies",
+      "icon": "/svg/icons8-gemstone-48.png"
+    },
+    {
+      "id": 3,
+      "label": "رزومه ساز",
+      "link": "/ResumeMaker",
+      "icon": "/svg/icons8-sparkles-48.png"
+    },
+    {
+      "id": 4,
+      "label": "جستجوی مشاغل",
+      "link": "/JabinjaJobs",
+      "icon": "/svg/icons8-magnifier-48 (1).png"
+    },
+    {
+      "id": 5,
+      "label": "خانه",
+      "link": "/",
+      "icon": "/svg/home.svg"
+    }
+  ],
+  "logo": {
+    "name": "logo"
+  },
+  "header-2": {
+    "select": [
+      {
+        "id": 1,
+        "value": "دسته بندی"
+      },
+      {
+        "id": 2,
+        "value": "فروش و بازاریابی"
+      },
+      {
+        "id": 3,
+        "value": "وب .برنامه نویسی و نرم افزار"
+      },
+      {
+        "id": 4,
+        "value": "مالی و حسابداری"
+      },
+      {
+        "id": 5,
+        "value": "گردشگری"
+      },
+      {
+        "id": 6,
+        "value": "پزشکی و پرستاری"
+      }
+    ],
+    "select2": [
+      {
+        "id": 1,
+        "value": "همه ی استان ها"
+      },
+      {
+        "id": 2,
+        "value": "تهران"
+      },
+      {
+        "id": 3,
+        "value": "مشهد"
+      },
+      {
+        "id": 4,
+        "value": "اصفهان"
+      },
+      {
+        "id": 5,
+        "value": "شیراز"
+      },
+      {
+        "id": 6,
+        "value": "کرمان"
+      }
+    ]
+  }
+}
